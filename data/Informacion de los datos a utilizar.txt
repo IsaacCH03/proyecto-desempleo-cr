@@ -1,0 +1,11 @@
+Para el análisis de la situación actual recomiendo utilizar los datos desde el 2024 al 2025
+
+Para el análisis histórico recomiendo utilizar agrupar los datos por año, es decir tomar desde el 2010 al 2025
+
+Para pronostico si sirve tomar todos los datos como están
+
+Para simulación tomar desde el 2024 al 2025
+
+Para programación lineal tomar Datos actuales de desempleo por edad
+
+Para asignación tomar Los grupos etarios actuales
