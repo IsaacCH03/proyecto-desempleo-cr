@@ -2,6 +2,7 @@ import pandas as pd
 from scipy.optimize import linear_sum_assignment
 from src.grupos_etarios import obtener_promedio_grupos_etarios
 
+
 def ejecutar_modelo_asignacion_corregido():
     programas = [
         "Capacitación técnica",
@@ -32,7 +33,7 @@ def ejecutar_modelo_asignacion_corregido():
     # Obtener los datos reales del INEC
     promedio_grupos = obtener_promedio_grupos_etarios()
     promedio_grupos = promedio_grupos[promedio_grupos["Grupo_etario"].isin(grupos)]
-    
+
     desempleados_por_grupo = dict(
         zip(promedio_grupos["Grupo_etario"], promedio_grupos["Desempleados"])
     )
@@ -45,10 +46,10 @@ def ejecutar_modelo_asignacion_corregido():
     for fila, columna in zip(filas, columnas):
         programa = programas[fila]
         grupo = grupos[columna]
-        
+
         impacto_base = matriz_impacto.loc[programa, grupo]
         volumen_desempleados = desempleados_por_grupo.get(grupo, 0)
-        
+
         # El beneficio real ponderado se calcula POST-optimización para la métrica final
         beneficio_real = (impacto_base / 100) * volumen_desempleados
 

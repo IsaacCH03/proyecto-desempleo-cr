@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -38,7 +39,12 @@ def generar_pronostico(datos, periodos_futuros=12):
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
-    plt.savefig("graficos/pronostico_desempleo.png")
+
+    base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    ruta_grafico = os.path.join(base, "graficos", "pronostico_desempleo.png")
+    os.makedirs(os.path.dirname(ruta_grafico), exist_ok=True)
+
+    plt.savefig(ruta_grafico)
     plt.show()
 
     return pronostico

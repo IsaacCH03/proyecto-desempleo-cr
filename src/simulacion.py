@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -67,7 +68,12 @@ def simular_escenarios(datos, numero_simulaciones=10000, periodos_futuros=12):
         plt.text(i, valor + 1000, f"{valor:,}", ha="center")
 
     plt.tight_layout()
-    plt.savefig("graficos/simulacion_escenarios.png")
+
+    base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    ruta_grafico = os.path.join(base, "graficos", "simulacion_escenarios.png")
+    os.makedirs(os.path.dirname(ruta_grafico), exist_ok=True)
+
+    plt.savefig(ruta_grafico)
     plt.show()
 
     return tabla_resultados

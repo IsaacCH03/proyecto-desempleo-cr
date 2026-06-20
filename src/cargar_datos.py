@@ -1,7 +1,11 @@
+import os
 import pandas as pd
 
+
 def cargar_poblacion_desempleada():
-    archivo = "data/desempleo.xlsx"
+    # Ruta relativa a la raíz del proyecto, independiente del directorio de trabajo
+    base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    archivo = os.path.join(base, "data", "desempleo.xlsx")
 
     df = pd.read_excel(
         archivo,

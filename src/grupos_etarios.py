@@ -1,8 +1,11 @@
+import os
 import pandas as pd
 
 
 def obtener_promedio_grupos_etarios():
-    archivo = "data/desempleo.xlsx"
+    # Ruta relativa a la raíz del proyecto, independiente del directorio de trabajo
+    base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    archivo = os.path.join(base, "data", "desempleo.xlsx")
 
     df = pd.read_excel(
         archivo,
@@ -37,6 +40,7 @@ def obtener_promedio_grupos_etarios():
     resultado_actual = resultado[
         resultado["Anio"].isin(["2024", "2025"])
     ]
+
     promedio = (
         resultado_actual
         .groupby("Grupo_etario")["Desempleados"]
