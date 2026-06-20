@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\angel\\Downloads\\Primer Semestre 2026\\Metodos Cuantitativos\\Proyecto M\u00E9todos\\proyecto-desempleo-cr\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\angel\\Downloads\\Primer Semestre 2026\\Metodos Cuantitativos\\Proyecto M\u00E9todos\\proyecto-desempleo-cr\\src\\simulacion.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\simulacion.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\angel\\Downloads\\Primer Semestre 2026\\Metodos Cuantitativos\\Proyecto M\u00E9todos\\proyecto-desempleo-cr\\main.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\angel\\Downloads\\Primer Semestre 2026\\Metodos Cuantitativos\\Proyecto M\u00E9todos\\proyecto-desempleo-cr\\src\\pronosticos.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pronosticos.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\angel\\Downloads\\Primer Semestre 2026\\Metodos Cuantitativos\\Proyecto M\u00E9todos\\proyecto-desempleo-cr\\src\\cargar_datos.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\cargar_datos.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\angel\\Downloads\\Primer Semestre 2026\\Metodos Cuantitativos\\Proyecto M\u00E9todos\\proyecto-desempleo-cr\\src\\analisis_actual.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\analisis_actual.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\angel\\Downloads\\Primer Semestre 2026\\Metodos Cuantitativos\\Proyecto M\u00E9todos\\proyecto-desempleo-cr\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "cargar_datos.py",
+              "DocumentMoniker": "C:\\Users\\angel\\Downloads\\Primer Semestre 2026\\Metodos Cuantitativos\\Proyecto M\u00E9todos\\proyecto-desempleo-cr\\src\\cargar_datos.py",
+              "RelativeDocumentMoniker": "src\\cargar_datos.py",
+              "ToolTip": "C:\\Users\\angel\\Downloads\\Primer Semestre 2026\\Metodos Cuantitativos\\Proyecto M\u00E9todos\\proyecto-desempleo-cr\\src\\cargar_datos.py",
+              "RelativeToolTip": "src\\cargar_datos.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-06-15T17:50:32.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "simulacion.py",
+              "DocumentMoniker": "C:\\Users\\angel\\Downloads\\Primer Semestre 2026\\Metodos Cuantitativos\\Proyecto M\u00E9todos\\proyecto-desempleo-cr\\src\\simulacion.py",
+              "RelativeDocumentMoniker": "src\\simulacion.py",
+              "ToolTip": "C:\\Users\\angel\\Downloads\\Primer Semestre 2026\\Metodos Cuantitativos\\Proyecto M\u00E9todos\\proyecto-desempleo-cr\\src\\simulacion.py",
+              "RelativeToolTip": "src\\simulacion.py",
+              "ViewState": "AgIAACgAAAAAAAAAAAAqwEgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-06-15T15:58:51.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "pronosticos.py",
+              "DocumentMoniker": "C:\\Users\\angel\\Downloads\\Primer Semestre 2026\\Metodos Cuantitativos\\Proyecto M\u00E9todos\\proyecto-desempleo-cr\\src\\pronosticos.py",
+              "RelativeDocumentMoniker": "src\\pronosticos.py",
+              "ToolTip": "C:\\Users\\angel\\Downloads\\Primer Semestre 2026\\Metodos Cuantitativos\\Proyecto M\u00E9todos\\proyecto-desempleo-cr\\src\\pronosticos.py",
+              "RelativeToolTip": "src\\pronosticos.py",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-06-15T15:58:40.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "analisis_actual.py",
+              "DocumentMoniker": "C:\\Users\\angel\\Downloads\\Primer Semestre 2026\\Metodos Cuantitativos\\Proyecto M\u00E9todos\\proyecto-desempleo-cr\\src\\analisis_actual.py",
+              "RelativeDocumentMoniker": "src\\analisis_actual.py",
+              "ToolTip": "C:\\Users\\angel\\Downloads\\Primer Semestre 2026\\Metodos Cuantitativos\\Proyecto M\u00E9todos\\proyecto-desempleo-cr\\src\\analisis_actual.py",
+              "RelativeToolTip": "src\\analisis_actual.py",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwCIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-06-15T15:58:17.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.py",
+              "DocumentMoniker": "C:\\Users\\angel\\Downloads\\Primer Semestre 2026\\Metodos Cuantitativos\\Proyecto M\u00E9todos\\proyecto-desempleo-cr\\main.py",
+              "RelativeDocumentMoniker": "main.py",
+              "ToolTip": "C:\\Users\\angel\\Downloads\\Primer Semestre 2026\\Metodos Cuantitativos\\Proyecto M\u00E9todos\\proyecto-desempleo-cr\\main.py",
+              "RelativeToolTip": "main.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-06-15T15:57:25.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "requirements.txt",
+              "DocumentMoniker": "C:\\Users\\angel\\Downloads\\Primer Semestre 2026\\Metodos Cuantitativos\\Proyecto M\u00E9todos\\proyecto-desempleo-cr\\requirements.txt",
+              "RelativeDocumentMoniker": "requirements.txt",
+              "ToolTip": "C:\\Users\\angel\\Downloads\\Primer Semestre 2026\\Metodos Cuantitativos\\Proyecto M\u00E9todos\\proyecto-desempleo-cr\\requirements.txt",
+              "RelativeToolTip": "requirements.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-06-15T15:56:01.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
