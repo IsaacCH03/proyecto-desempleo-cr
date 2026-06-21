@@ -14,26 +14,24 @@ def graficar_desempleo_anual(datos):
         .reset_index()
     )
 
-    plt.figure(figsize=(12, 6))
+    fig, ax = plt.subplots(figsize=(10, 5))
 
-    plt.plot(
+    ax.plot(
         promedio_anual["Anio"],
         promedio_anual["Poblacion_desempleada"],
         marker="o"
     )
 
-    plt.title("Promedio anual de población desempleada en Costa Rica")
-    plt.xlabel("Año")
-    plt.ylabel("Personas desempleadas")
-    plt.grid(True)
-    plt.tight_layout()
-
+    ax.set_title("Promedio anual de población desempleada en Costa Rica")
+    ax.set_xlabel("Año")
+    ax.set_ylabel("Personas desempleadas")
+    ax.grid(True)
+    fig.tight_layout()
 
     base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     ruta_grafico = os.path.join(base, "graficos", "desempleo_anual.png")
     os.makedirs(os.path.dirname(ruta_grafico), exist_ok=True)
 
-    plt.savefig(ruta_grafico)
-    plt.show()
+    fig.savefig(ruta_grafico)
 
-    return promedio_anual
+    return promedio_anual, fig

@@ -50,12 +50,15 @@ def main():
 
                 elif opcion == 3:
                     print(respuesta["resultado"])
+                    respuesta["figura"].show()
 
                 elif opcion == 4:
                     print(respuesta["resultado"])
+                    respuesta["figura"].show()
 
                 elif opcion == 5:
                     print(respuesta["resultado"].to_string(index=False))
+                    respuesta["figura"].show()
 
         except ValueError as error:
             print(f"\nError: {error}")

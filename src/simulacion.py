@@ -53,27 +53,26 @@ def simular_escenarios(datos, numero_simulaciones=10000, periodos_futuros=12):
 
     tabla_resultados = pd.DataFrame(resultados)
 
-    plt.figure(figsize=(10, 6))
+    fig, ax = plt.subplots(figsize=(9, 5))
 
-    plt.bar(
+    ax.bar(
         tabla_resultados["Escenario"],
         tabla_resultados["Valor_final_esperado"]
     )
 
-    plt.title("Comparacion de escenarios simulados")
-    plt.ylabel("Personas desempleadas")
-    plt.xticks(rotation=20)
+    ax.set_title("Comparacion de escenarios simulados")
+    ax.set_ylabel("Personas desempleadas")
+    ax.tick_params(axis="x", rotation=20)
 
     for i, valor in enumerate(tabla_resultados["Valor_final_esperado"]):
-        plt.text(i, valor + 1000, f"{valor:,}", ha="center")
+        ax.text(i, valor + 1000, f"{valor:,}", ha="center")
 
-    plt.tight_layout()
+    fig.tight_layout()
 
     base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     ruta_grafico = os.path.join(base, "graficos", "simulacion_escenarios.png")
     os.makedirs(os.path.dirname(ruta_grafico), exist_ok=True)
 
-    plt.savefig(ruta_grafico)
-    plt.show()
+    fig.savefig(ruta_grafico)
 
-    return tabla_resultados
+    return tabla_resultados, fig

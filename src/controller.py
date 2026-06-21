@@ -42,7 +42,8 @@ def formatear_resultado_pl(df: pd.DataFrame) -> pd.DataFrame:
 def ejecutar_metodo(opcion: int) -> dict:
     """
     Ejecuta el método seleccionado por el usuario y devuelve un diccionario
-    con los resultados listos para que main.py los imprima.
+    con los resultados listos para que main.py (CLI) o gui_app.py (interfaz
+    gráfica) los muestren.
     """
 
     if opcion == 1:
@@ -69,11 +70,12 @@ def ejecutar_metodo(opcion: int) -> dict:
 
     elif opcion == 3:
         datos = cargar_poblacion_desempleada()
-        resultado = graficar_desempleo_anual(datos)
+        resultado, figura = graficar_desempleo_anual(datos)
 
         return {
             "metodo": "Promedio anual de desempleo",
             "resultado": resultado,
+            "figura": figura,
         }
 
     elif opcion == 4:
@@ -85,20 +87,22 @@ def ejecutar_metodo(opcion: int) -> dict:
         print("\nDATOS FINALES")
         print(datos.tail())
 
-        resultado = generar_pronostico(datos)
+        resultado, figura = generar_pronostico(datos)
 
         return {
             "metodo": "Pronósticos",
             "resultado": resultado,
+            "figura": figura,
         }
 
     elif opcion == 5:
         datos = cargar_poblacion_desempleada()
-        resultado = simular_escenarios(datos)
+        resultado, figura = simular_escenarios(datos)
 
         return {
             "metodo": "Simulación de escenarios",
             "resultado": resultado,
+            "figura": figura,
         }
 
     else:
