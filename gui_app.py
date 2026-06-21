@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
+import tkinter.font as tkfont
 
 import matplotlib
 matplotlib.use("TkAgg")
@@ -23,9 +24,21 @@ class AppDesempleoCR(tk.Tk):
         super().__init__()
 
         self.title("Proyecto Desempleo CR")
-        self.geometry("1150x720")
+        self.geometry("1300x760")
         self.minsize(950, 600)
         self.configure(bg="white")
+
+        # Abrimos maximizada para aprovechar todo el ancho disponible
+        # (la tabla de programación lineal tiene 9 columnas y necesita
+        # espacio). Si el sistema no soporta 'zoomed' (algunos Linux),
+        # caemos a pantalla completa con Escape para salir de ese modo.
+        try:
+            self.state("zoomed")
+        except tk.TclError:
+            try:
+                self.attributes("-zoomed", True)
+            except tk.TclError:
+                pass
 
         # Guardamos la figura mostrada actualmente para poder cerrarla
         # con matplotlib (plt.close) cuando se cambia de método.
@@ -198,18 +211,36 @@ class AppDesempleoCR(tk.Tk):
         tree = ttk.Treeview(
             frame, columns=columnas, show="headings", height=alto, style="Tabla.Treeview"
         )
+
+        # Medimos el texto real (encabezado y celdas) para que cada columna
+        # tenga solo el ancho que necesita, en vez de un ancho fijo igual
+        # para todas. Así columnas cortas ("Prioridad") quedan angostas y
+        # dejan espacio a las que sí necesitan más ("Desempleados promedio").
+        fuente_celda = tkfont.Font(family="Segoe UI", size=9)
+        fuente_encabezado = tkfont.Font(family="Segoe UI", size=9, weight="bold")
+
         for col in columnas:
+            valores_col = df[col].astype(str)
+            ancho_contenido = max(
+                (fuente_celda.measure(v) for v in valores_col), default=0
+            )
+            ancho_encabezado = fuente_encabezado.measure(str(col))
+            ancho = max(ancho_contenido, ancho_encabezado) + 20
+            ancho = max(65, min(ancho, 230))  # límites razonables
+
             tree.heading(col, text=col)
-            tree.column(col, anchor="center", width=150, stretch=True)
+            tree.column(col, anchor="center", width=ancho, stretch=False)
 
         for _, fila in df.iterrows():
             tree.insert("", "end", values=list(fila))
 
         vsb = ttk.Scrollbar(frame, orient="vertical", command=tree.yview)
-        tree.configure(yscrollcommand=vsb.set)
+        hsb = ttk.Scrollbar(frame, orient="horizontal", command=tree.xview)
+        tree.configure(yscrollcommand=vsb.set, xscrollcommand=hsb.set)
 
         tree.grid(row=0, column=0, sticky="nsew")
         vsb.grid(row=0, column=1, sticky="ns")
+        hsb.grid(row=1, column=0, sticky="ew")
         frame.grid_columnconfigure(0, weight=1)
 
     def _mostrar_figura(self, fig):

@@ -8,9 +8,9 @@ def simular_escenarios(datos, numero_simulaciones=10000, periodos_futuros=12):
     datos = datos.copy()
 
     datos["Poblacion_desempleada"] = datos["Poblacion_desempleada"].astype(float)
-    datos["Anio"] = datos["Trimestre"].str[-4:].astype(int)
+    datos["Año"] = datos["Trimestre"].str[-4:].astype(int)
 
-    datos_recientes = datos[datos["Anio"] >= 2024]
+    datos_recientes = datos[datos["Año"] >= 2024]
 
     variaciones = datos_recientes["Poblacion_desempleada"].diff().dropna()
 

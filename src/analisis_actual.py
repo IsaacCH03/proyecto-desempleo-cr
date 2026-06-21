@@ -6,10 +6,10 @@ import matplotlib.pyplot as plt
 def graficar_desempleo_anual(datos):
     datos = datos.copy()
 
-    datos["Anio"] = datos["Trimestre"].str[-4:]
+    datos["Año"] = datos["Trimestre"].str[-4:]
 
     promedio_anual = (
-        datos.groupby("Anio")["Poblacion_desempleada"]
+        datos.groupby("Año")["Poblacion_desempleada"]
         .mean()
         .reset_index()
     )
@@ -17,7 +17,7 @@ def graficar_desempleo_anual(datos):
     fig, ax = plt.subplots(figsize=(10, 5))
 
     ax.plot(
-        promedio_anual["Anio"],
+        promedio_anual["Año"],
         promedio_anual["Poblacion_desempleada"],
         marker="o"
     )

@@ -2,7 +2,6 @@ import pandas as pd
 import pulp
 from src.grupos_etarios import obtener_promedio_grupos_etarios
 
-
 def ejecutar_programacion_lineal():
     promedio_grupos = obtener_promedio_grupos_etarios()
 
